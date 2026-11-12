@@ -186,8 +186,9 @@ header.site {
 .cta-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 26px;
+  align-items: center;
+  gap: 14px;
+  margin-top: 28px;
 }
 
 .btn {
@@ -227,7 +228,9 @@ header.site {
 
 .store-badge {
   display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
+  justify-content: center;
   border-radius: 12px;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
@@ -240,8 +243,10 @@ header.site {
 
 .store-badge img {
   display: block;
-  width: 180px;
+  width: 190px;
   height: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .hero-note {
@@ -384,6 +389,8 @@ header.site {
 
 .cta-final p { max-width: 52ch; }
 
+.cta-final .store-badge { justify-self: center; }
+
 /* ------------------------------------------------------- páginas de texto */
 
 .doc {
@@ -444,6 +451,8 @@ footer.site-footer {
 
 .footer-brand img { width: 32px; height: 32px; border-radius: 9px; }
 
+.footer-brand .wordmark { font-size: 16px; }
+
 .footer-links {
   display: flex;
   gap: 18px;
@@ -471,7 +480,9 @@ footer.site-footer {
   /* Quem abre no celular nao precisa escanear QR da propria tela. */
   .hero-visual { display: none; }
 
-  .store-badge img { width: 165px; }
+  .cta-buttons { margin-top: 24px; }
+
+  .store-badge img { width: 172px; }
 
   .section { padding: 24px 20px; }
 
