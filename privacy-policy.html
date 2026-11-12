@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidade — QuittoPay</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; background: #f7f9fc; color: #0f172a; }
+    main { max-width: 720px; margin: 0 auto; padding: 32px 20px 48px; }
+    .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px; }
+    h1 { font-size: 28px; margin: 0 0 8px; }
+    h2 { font-size: 18px; margin: 24px 0 8px; }
+    p, li { line-height: 1.6; color: #435066; }
+    .meta { color: #7a8798; font-size: 14px; margin-bottom: 20px; }
+    a { color: #6f93a8; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1>Política de Privacidade</h1>
+      <p class="meta">QuittoPay · Mex unified Inc. · atualizado em 25 de outubro de 2026</p>
+
+      <p>O QuittoPay é uma ferramenta de organização pessoal. Esta política explica quais dados ficam no aparelho, quando informações podem ser transmitidas a terceiros e como funcionam as permissões.</p>
+
+      <h2>1. Responsável</h2>
+      <p><strong>Mex unified Inc.</strong><br />Contato: <a href="mailto:quittopay@gmail.com">quittopay@gmail.com</a></p>
+
+      <h2>2. Dados tratados pelo app</h2>
+      <ul>
+        <li>Informações que você cadastra: contas, metas, notas fiscais, valores, datas, observações, orçamentos e preferências.</li>
+        <li>Arquivos e comprovantes que você escolhe anexar, importar, exportar ou compartilhar.</li>
+        <li>Informações de autenticação e perfil necessárias quando você escolhe entrar com Google.</li>
+        <li>Versão e data do aceite dos termos, mantidas no aparelho e, para usuários autenticados, sincronizadas com o perfil no Amazon Cognito.</li>
+        <li>Se você entrar em uma conta no app: versão do app, plataforma e informações técnicas do aparelho, como sistema operacional, fabricante/modelo, resolução de tela, idioma e fuso horário, para registro de sessão e suporte.</li>
+        <li>Se você ativar notificações remotas: token de push do aparelho e plataforma, usados para direcionar mensagens do painel QuittoPay.</li>
+      </ul>
+
+      <h2>3. Armazenamento local e nuvem</h2>
+      <p>Os registros financeiros e os arquivos do app são armazenados localmente no aparelho, em banco de dados e pasta privada do QuittoPay. Eles não são sincronizados nem enviados automaticamente para uma nuvem ou servidor do QuittoPay. Entrar com Google não sincroniza contas, metas, notas ou comprovantes entre aparelhos. Há dados operacionais separados: em uma sessão autenticada, o app pode registrar versão/plataforma e informações técnicas do aparelho; com notificações remotas ativadas, o token de push e a plataforma são registrados no servidor para entrega de mensagens.</p>
+      <p>O QuittoPay não mantém cópia em servidor dos registros e comprovantes salvos localmente. Apagar os dados do app ou desinstalá-lo pode remover esses dados do aparelho; o que for apagado não pode ser recuperado pelo QuittoPay.</p>
+      <p>O backup é criado como arquivo protegido por senha no aparelho. O arquivo só é transmitido ou salvo em outro serviço se você escolher compartilhá-lo ou enviá-lo. Você é responsável por guardar o arquivo e a senha em segurança.</p>
+
+      <h2>4. Serviços externos e transmissões</h2>
+      <p>Algumas funções dependem de serviços de terceiros e podem transmitir os dados necessários para atender ao pedido:</p>
+      <ul>
+        <li><strong>Login Google e Amazon Cognito:</strong> processam autenticação e dados da sessão. O Cognito pode guardar a versão e a data do aceite dos termos. O QuittoPay não recebe nem armazena a senha da sua conta Google.</li>
+        <li><strong>Notificações remotas:</strong> quando autorizadas e ativadas, o token de push e a plataforma do aparelho são enviados ao servidor do QuittoPay e usados pelo serviço Expo Push Notifications, que encaminha notificações ao Firebase Cloud Messaging (Android) ou ao serviço de push da Apple (iOS). Título, texto e dados necessários para abrir a mensagem acompanham o envio. Com o app aberto, uma mensagem recebida pode ser exibida em popup; ao tocar em uma notificação, o app pode abrir e apresentar seu conteúdo. O app também consulta, com a sua sessão autenticada, as mensagens do painel destinadas à sua conta para registrá-las na caixa local do sininho. A lista local é carregada primeiro e pode ser atualizada em segundo plano quando você abre o sininho ou retorna ao app.</li>
+        <li><strong>Registro técnico de sessão:</strong> para usuários autenticados, o app envia ao servidor do QuittoPay a versão, a plataforma e dados técnicos do aparelho; uma cópia resumida pode ser armazenada no perfil Amazon Cognito. Esses dados incluem informações como sistema, modelo/fabricante, resolução, idioma e fuso horário, e não incluem IMEI ou número de série.</li>
+        <li><strong>Consulta de CNPJ:</strong> quando você solicita essa função, o número do CNPJ é enviado à BrasilAPI para obter dados cadastrais públicos.</li>
+        <li><strong>Consulta de nota fiscal:</strong> quando solicitada, a chave/QR Code ou URL da nota pode ser enviada ao portal da Secretaria da Fazenda competente. O XML que você seleciona é lido no aparelho; a consulta externa pode ocorrer se os dados do arquivo não forem suficientes e você solicitar a consulta.</li>
+        <li><strong>Visualização de PDF:</strong> o app pode carregar a biblioteca PDF.js de uma CDN externa. O arquivo PDF é lido no aparelho e exibido localmente no visualizador.</li>
+        <li><strong>Compartilhamento e e-mail:</strong> arquivos ou informações só são entregues aos apps/serviços escolhidos por você ao acionar essas funções.</li>
+      </ul>
+      <p>Esses terceiros tratam informações conforme suas próprias políticas e infraestrutura. O QuittoPay não controla a retenção ou o uso de dados por esses serviços. As consultas externas exigem conexão com a internet.</p>
+
+      <h2>5. Permissões e arquivos</h2>
+      <ul>
+        <li><strong>Câmera:</strong> usada para ler QR Codes de notas fiscais e fotografar comprovantes. Sem a permissão, essas funções de câmera ficam indisponíveis.</li>
+        <li><strong>Microfone:</strong> opcional, só se o assistente de voz estiver ligado em Configurações. O áudio é reconhecido neste aparelho e não é enviado ao QuittoPay. Um tom curto toca no celular quando o microfone começa a ouvir. Desligar o assistente esconde o microfone do topo.</li>
+        <li><strong>Arquivos:</strong> para anexar, importar ou restaurar, o app abre o seletor de documentos do sistema e acessa os arquivos escolhidos por você. O app não pede acesso geral às pastas pessoais.</li>
+        <li><strong>Armazenamento privado do app:</strong> o sistema operacional permite ao QuittoPay salvar o banco de dados e os anexos na pasta privada do aplicativo, sem solicitar acesso geral aos arquivos do aparelho. Esse armazenamento local é indispensável: se estiver indisponível, não será possível salvar nem usar os registros e anexos do app.</li>
+        <li><strong>Notificações:</strong> opcionais. O app pode exibir lembretes locais de vencimento e de conclusão de meta. O sistema pode solicitar a permissão após o login. Com a permissão e o recurso ativado, o app também pode receber mensagens remotas do QuittoPay. A permissão pode ser revogada nas configurações do aparelho; as notificações remotas também podem ser desativadas nas configurações do app.</li>
+        <li><strong>Compartilhamento/e-mail:</strong> acionados somente quando você escolhe compartilhar ou enviar um arquivo. Na tela “Fale conosco”, o app abre o compositor de e-mail com o endereço de suporte e a mensagem que você escreveu; a mensagem só é enviada quando você confirma o envio no aplicativo de e-mail.</li>
+      </ul>
+      <p>Você pode negar ou revogar permissões nas configurações do aparelho. Sem a câmera, as funções de QR Code e captura de comprovantes não funcionam; outras funções compatíveis podem continuar disponíveis. Se as notificações forem negadas ou desativadas, os lembretes do sistema e os avisos push podem não ser exibidos; mensagens do painel podem aparecer no sininho quando o app sincronizar. Se o armazenamento privado do app estiver indisponível, não será possível salvar nem usar os registros e anexos locais.</p>
+
+      <h2>6. Leitura de documentos</h2>
+      <p>A leitura/OCR de imagens e documentos é realizada no aparelho quando suportada pelo formato e pela versão do app. O conteúdo não é enviado a um serviço de OCR em nuvem pelo QuittoPay. Consultas fiscais externas, quando iniciadas, são descritas na seção de serviços externos.</p>
+
+      <h2>7. Compartilhamento e venda de dados</h2>
+      <p>Não vendemos seus dados pessoais. Além das transmissões necessárias aos serviços externos descritos acima, os dados e arquivos saem do aparelho quando você escolhe exportar, compartilhar, enviar por e-mail ou consultar uma fonte externa. As mensagens do painel e os tokens de push são tratados pelo servidor do QuittoPay para disponibilizar a caixa de entrada e direcionar notificações; registros financeiros e comprovantes locais não são incluídos nesse envio.</p>
+
+      <h2>8. Retenção e exclusão</h2>
+      <p>Os registros locais permanecem no aparelho até que você os exclua, apague os dados do app ou desinstale o aplicativo. Mensagens do painel são mantidas no serviço do QuittoPay e sincronizadas com o aparelho autenticado; o servidor mantém um conjunto limitado das mensagens mais recentes. O token de push permanece registrado enquanto o aparelho estiver inscrito e é removido quando você desativa as notificações pelo app, quando o token deixa de ser válido ou quando o registro é substituído. Os dados técnicos de sessão e o aceite de termos podem permanecer no perfil de autenticação/registro operacional. Para dúvidas ou solicitações relacionadas a esses dados, contate-nos pelo e-mail abaixo.</p>
+
+      <h2>9. Segurança</h2>
+      <p>O QuittoPay usa o armazenamento privado do sistema operacional e oferece backups protegidos por senha. Proteja o aparelho, use uma senha forte no backup e não compartilhe credenciais. Nenhum método de armazenamento ou transmissão é totalmente isento de risco.</p>
+
+      <h2>10. Menores</h2>
+      <p>O app não é dirigido a crianças e seu uso é destinado a pessoas com 18 anos ou mais, conforme os Termos de uso.</p>
+
+      <h2>11. Alterações e contato</h2>
+      <p>Esta política pode ser atualizada para refletir mudanças no app ou nos serviços utilizados. A versão vigente fica publicada nesta página e alterações relevantes podem ser comunicadas no app.</p>
+      <p>Para dúvidas ou solicitações sobre privacidade: <a href="mailto:quittopay@gmail.com">quittopay@gmail.com</a>.</p>
+    </div>
+  </main>
+</body>
+</html>
