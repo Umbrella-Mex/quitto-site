@@ -4,77 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Abrir no QuittoPay</title>
-  <meta name="description" content="Abre a conta no QuittoPay ou leva à Play Store se o app não estiver instalado." />
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background: #0b1220;
-      color: #f5f7fb;
-      padding: 24px;
-    }
-    .card {
-      width: min(420px, 100%);
-      background: #121a2b;
-      border: 1px solid #243047;
-      border-radius: 16px;
-      padding: 24px;
-      text-align: center;
-    }
-    h1 { font-size: 1.25rem; margin: 0 0 8px; }
-    p { margin: 0 0 16px; color: #b7c0d1; line-height: 1.45; }
-    a.btn {
-      display: inline-block;
-      background: #3b82f6;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 12px 18px;
-      border-radius: 10px;
-    }
-    .muted { margin-top: 14px; font-size: 0.85rem; color: #8b97ab; }
-  </style>
-</head>
-<body>
-  <main class="card">
-    <h1>QuittoPay</h1>
-    <p id="status">Abrindo a conta no app…</p>
-    <a class="btn" id="store" href="https://play.google.com/store/apps/details?id=com.quitto.pay">
-      Baixar na Play Store
-    </a>
-    <p class="muted">Se o app estiver instalado, ele abre automaticamente.</p>
-  </main>
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://quittopay.com.br/abrir-conta/" />
   <script>
     (function () {
-      var params = new URLSearchParams(window.location.search);
-      var id = params.get('id') || '';
-      var deepLink = id
-        ? 'quittopay://account?id=' + encodeURIComponent(id)
-        : 'quittopay://';
-      var playStore = 'https://play.google.com/store/apps/details?id=com.quitto.pay';
-      var statusEl = document.getElementById('status');
-      var storeEl = document.getElementById('store');
-      storeEl.href = playStore;
-
-      var fallbackTimer = setTimeout(function () {
-        statusEl.textContent = 'App não encontrado. Redirecionando para a Play Store…';
-        window.location.href = playStore;
-      }, 1600);
-
-      window.addEventListener('pagehide', function () {
-        clearTimeout(fallbackTimer);
-      });
-      document.addEventListener('visibilitychange', function () {
-        if (document.hidden) clearTimeout(fallbackTimer);
-      });
-
-      window.location.href = deepLink;
+      var query = window.location.search || '';
+      window.location.replace('abrir-conta/' + query);
     })();
   </script>
-  <p class="version">Versão v1.0</p>
+</head>
+<body>
+  <p>Redirecionando… <a href="abrir-conta/">Abrir no QuittoPay</a></p>
 </body>
 </html>

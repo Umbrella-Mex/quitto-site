@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /abrir-conta/
+
+Sitemap: https://quittopay.com.br/sitemap.xml
